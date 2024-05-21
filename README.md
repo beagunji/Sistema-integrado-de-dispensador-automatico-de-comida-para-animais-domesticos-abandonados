@@ -7,14 +7,7 @@ Disciplina: Objetos Inteligentes Conectados
 Turma: 05H - Matutino
 
 Membros:
-Beatriz Hitomi Gunji 
-
-Giovana Gomes Leal 
-
-Matheus Villani Valente
-
-Vitor Akira Uehara
-
+Beatriz Hitomi Gunji, Giovana Gomes Leal, Matheus Villani Valente, Vitor Akira Uehara.
 
 
 
