@@ -1,0 +1,620 @@
+[
+    {
+        "id": "0b47d03972aa6e10",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b0d34d2796da74df",
+        "type": "mqtt in",
+        "z": "0b47d03972aa6e10",
+        "name": "Peso-Cachorro",
+        "topic": "TESTGRUPO5DOG/Peso",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8e6d6e3ac4d2a10f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 100,
+        "wires": [
+            [
+                "6c1376e339fb1e16",
+                "6b1603a48d17d05e"
+            ]
+        ]
+    },
+    {
+        "id": "b14ef1398e79a22f",
+        "type": "mqtt in",
+        "z": "0b47d03972aa6e10",
+        "name": "VolumeAgua-Cachorro",
+        "topic": "TESTGRUPO5DOG/Volume",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8e6d6e3ac4d2a10f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 280,
+        "wires": [
+            [
+                "69af31a355dbb4f3",
+                "9d4b2127af5b25a6"
+            ]
+        ]
+    },
+    {
+        "id": "e96d13b2eed10d8d",
+        "type": "mqtt in",
+        "z": "0b47d03972aa6e10",
+        "name": "Peso-Gato",
+        "topic": "TESTGRUPO5CAT/Peso",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8e6d6e3ac4d2a10f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 440,
+        "wires": [
+            [
+                "1d5cd1b81961bcc5",
+                "cde47125bde0f4d8"
+            ]
+        ]
+    },
+    {
+        "id": "56e22ea8194b7f64",
+        "type": "mqtt in",
+        "z": "0b47d03972aa6e10",
+        "name": "VolumeAgua-Gato",
+        "topic": "TESTGRUPO5CAT/Volume",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8e6d6e3ac4d2a10f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 600,
+        "wires": [
+            [
+                "c50727b99ea7950d",
+                "4693753d24ecb885"
+            ]
+        ]
+    },
+    {
+        "id": "30941f311743c23d",
+        "type": "node-red-contrib-whatsapp-cmb-send-message",
+        "z": "0b47d03972aa6e10",
+        "name": "WhatsApp API",
+        "credtype": "account",
+        "account": "6a1d3dcb0721f152",
+        "text": "payload",
+        "phonenumbervalue": "",
+        "apikeyvalue": "",
+        "apikeyinputtypemessage": "msg",
+        "phonenumberinputtypemessage": "msg",
+        "inputtypemessage": "msg",
+        "rejectssl": false,
+        "x": 1260,
+        "y": 160,
+        "wires": [
+            [
+                "fbd5be6bd84dc734"
+            ]
+        ]
+    },
+    {
+        "id": "fbd5be6bd84dc734",
+        "type": "debug",
+        "z": "0b47d03972aa6e10",
+        "name": "debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1470,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "6c1376e339fb1e16",
+        "type": "debug",
+        "z": "0b47d03972aa6e10",
+        "name": "debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 290,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "69af31a355dbb4f3",
+        "type": "debug",
+        "z": "0b47d03972aa6e10",
+        "name": "debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 310,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "1d5cd1b81961bcc5",
+        "type": "debug",
+        "z": "0b47d03972aa6e10",
+        "name": "debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 310,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "c50727b99ea7950d",
+        "type": "debug",
+        "z": "0b47d03972aa6e10",
+        "name": "debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "5ebc8b4345674117",
+        "type": "trigger",
+        "z": "0b47d03972aa6e10",
+        "name": "Trigger",
+        "op1": "",
+        "op2": "0",
+        "op1type": "pay",
+        "op2type": "str",
+        "duration": "-6",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "hr",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 980,
+        "y": 340,
+        "wires": [
+            [
+                "760138f954571ea9"
+            ]
+        ]
+    },
+    {
+        "id": "9d4b2127af5b25a6",
+        "type": "change",
+        "z": "0b47d03972aa6e10",
+        "name": "parts.index = 1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "parts.index",
+                "pt": "msg",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 320,
+        "wires": [
+            [
+                "fcb7d74e86a2b147"
+            ]
+        ]
+    },
+    {
+        "id": "75fb388e1ef0c0d9",
+        "type": "join",
+        "z": "0b47d03972aa6e10",
+        "name": "",
+        "mode": "auto",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 830,
+        "y": 260,
+        "wires": [
+            [
+                "d1b0c31c08410166",
+                "5ebc8b4345674117"
+            ]
+        ]
+    },
+    {
+        "id": "6b1603a48d17d05e",
+        "type": "change",
+        "z": "0b47d03972aa6e10",
+        "name": "parts.index = 0",
+        "rules": [
+            {
+                "t": "set",
+                "p": "parts.index",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 140,
+        "wires": [
+            [
+                "fcb7d74e86a2b147"
+            ]
+        ]
+    },
+    {
+        "id": "cde47125bde0f4d8",
+        "type": "change",
+        "z": "0b47d03972aa6e10",
+        "name": "parts.index = 2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "parts.index",
+                "pt": "msg",
+                "to": "2",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 480,
+        "wires": [
+            [
+                "fcb7d74e86a2b147"
+            ]
+        ]
+    },
+    {
+        "id": "fcb7d74e86a2b147",
+        "type": "change",
+        "z": "0b47d03972aa6e10",
+        "name": "group id and count",
+        "rules": [
+            {
+                "t": "set",
+                "p": "parts.id",
+                "pt": "msg",
+                "to": "mygroup",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "parts.count",
+                "pt": "msg",
+                "to": "4",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 610,
+        "y": 260,
+        "wires": [
+            [
+                "75fb388e1ef0c0d9"
+            ]
+        ]
+    },
+    {
+        "id": "4693753d24ecb885",
+        "type": "change",
+        "z": "0b47d03972aa6e10",
+        "name": "parts.index = 3",
+        "rules": [
+            {
+                "t": "set",
+                "p": "parts.index",
+                "pt": "msg",
+                "to": "3",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 640,
+        "wires": [
+            [
+                "fcb7d74e86a2b147"
+            ]
+        ]
+    },
+    {
+        "id": "d1b0c31c08410166",
+        "type": "function",
+        "z": "0b47d03972aa6e10",
+        "name": "function",
+        "func": "var mensagem1 = msg.payload[0]; \nvar mensagem2 = msg.payload[1];\nvar mensagem3 = msg.payload[2];\nvar mensagem4 = msg.payload[3];\nmsg.payload = \"O pote de ração do Cachorro \\u{1F436} está cheio! \" + \"Peso da ração do cachorro: \" + mensagem1 + \" gramas\" + \". O volume de água é: \" + mensagem2 + \" L.\" + \"\\nO pote de ração do Gato \\u{1F431} está cheio! \" + \"Peso da ração do gato: \"+ mensagem3 + \" gramas\" + \". O volume de água é: \" + mensagem4 + \" L.\";\nreturn msg; ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 160,
+        "wires": [
+            [
+                "30941f311743c23d"
+            ]
+        ]
+    },
+    {
+        "id": "8eb5938e4cd0b6b7",
+        "type": "influxdb out",
+        "z": "0b47d03972aa6e10",
+        "influxdb": "5ec9404c4ab57332",
+        "name": "PesoRacao_Cachorro",
+        "measurement": "Racao_Cachorro",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "s",
+        "retentionPolicyV18Flux": "",
+        "org": "00b177f045fae239",
+        "bucket": "Bucket_Projeto",
+        "x": 1660,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "9d9a7f72a24e4d6c",
+        "type": "influxdb out",
+        "z": "0b47d03972aa6e10",
+        "influxdb": "5ec9404c4ab57332",
+        "name": "VolumeAgua_Cachorro",
+        "measurement": "Agua_Cachorro",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "s",
+        "retentionPolicyV18Flux": "",
+        "org": "00b177f045fae239",
+        "bucket": "Bucket_Projeto",
+        "x": 1670,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "6e040030fc6d6de6",
+        "type": "influxdb out",
+        "z": "0b47d03972aa6e10",
+        "influxdb": "5ec9404c4ab57332",
+        "name": "PesoRacao_Gato",
+        "measurement": "Racao_Gato",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "s",
+        "retentionPolicyV18Flux": "",
+        "org": "00b177f045fae239",
+        "bucket": "Bucket_Projeto",
+        "x": 1650,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "24e12334613822e3",
+        "type": "influxdb out",
+        "z": "0b47d03972aa6e10",
+        "influxdb": "5ec9404c4ab57332",
+        "name": "VolumeAgua_Gato",
+        "measurement": "Agua_Gato",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "s",
+        "retentionPolicyV18Flux": "",
+        "org": "00b177f045fae239",
+        "bucket": "Bucket_Projeto",
+        "x": 1650,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "760138f954571ea9",
+        "type": "split",
+        "z": "0b47d03972aa6e10",
+        "name": "Split Array",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 1190,
+        "y": 340,
+        "wires": [
+            [
+                "09c11384df042f0b"
+            ]
+        ]
+    },
+    {
+        "id": "09c11384df042f0b",
+        "type": "switch",
+        "z": "0b47d03972aa6e10",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "index",
+                "v": "0",
+                "vt": "num",
+                "v2": "0",
+                "v2t": "num"
+            },
+            {
+                "t": "index",
+                "v": "1",
+                "vt": "num",
+                "v2": "1",
+                "v2t": "num"
+            },
+            {
+                "t": "index",
+                "v": "2",
+                "vt": "num",
+                "v2": "2",
+                "v2t": "num"
+            },
+            {
+                "t": "index",
+                "v": "3",
+                "vt": "num",
+                "v2": "3",
+                "v2t": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 1390,
+        "y": 360,
+        "wires": [
+            [
+                "8eb5938e4cd0b6b7"
+            ],
+            [
+                "9d9a7f72a24e4d6c"
+            ],
+            [
+                "6e040030fc6d6de6"
+            ],
+            [
+                "24e12334613822e3"
+            ]
+        ]
+    },
+    {
+        "id": "8e6d6e3ac4d2a10f",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6a1d3dcb0721f152",
+        "type": "node-red-contrib-whatsapp-cmb-account",
+        "name": "WhatsApp API Account"
+    },
+    {
+        "id": "5ec9404c4ab57332",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "database",
+        "name": "InfluxDB",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "https://us-east-1-1.aws.cloud2.influxdata.com",
+        "timeout": "10",
+        "rejectUnauthorized": true
+    }
+]
