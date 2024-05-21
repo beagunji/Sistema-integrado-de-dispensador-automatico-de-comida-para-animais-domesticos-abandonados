@@ -1,5 +1,15 @@
 # Sistema-integrado-de-dispensador-automatico-de-comida:-solução-para-o-bem-estar-dos-animais-domesticos-abandonados
-Objetos Inteligentes Conectados
+
+Professor: Wallace Santana
+Disciplina: Objetos Inteligentes Conectados
+
+Turma: 05H - Matutino
+
+Membros:
+Beatriz Hitomi Gunji 
+Giovana Gomes Leal 
+Matheus Villani Valente
+Vitor Akira Uehara
 
 
 Resumo. 
