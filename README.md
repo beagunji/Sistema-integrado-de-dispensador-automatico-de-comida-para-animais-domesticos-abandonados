@@ -10,7 +10,7 @@ Turma: 05H - Matutino
 Membros:
 Beatriz Hitomi Gunji, Giovana Gomes Leal, Matheus Villani Valente, Vitor Akira Uehara.
 
-
+Link do video: https://youtu.be/5pDJaB8Bclg
 
 Resumo. 
 O Brasil é o terceiro país no mundo com maior população de animais de estimação. Cerca de 63% são cachorros e 54% gatos, o número de adoção destes animais cresceu nos últimos anos. Porém, a taxa de abandono nas ruas subiu, totalizando hoje aproximadamente 30 milhões sem receber cuidados e a atenção necessária, muitas das vezes sofrendo maus tratos. Graças a existência de ONGs voltadas a salvar estes animais, eles têm a oportunidade de encontrar um lar.  Com isso, surgiu o dispensador automático de ração e água para cachorros e gatos, tecnologia que oferece praticidade e entrega ração nos horários adequados e água fresca sem precisar de uma pessoa para realizar a tarefa, ou seja, esta funcionalidade automatiza essas tarefas proporcionando tranquilidade para o ser humano responsável quanto o bem-estar dos animais. Além disso, é possível regular a quantidade de ração a ser ofertada sob orientação do veterinário e auxilia no gerenciamento da organização e/ou da casa.
